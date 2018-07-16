@@ -6,3 +6,10 @@ int sayHello() {
 	
 	return 0;
 }
+
+
+int main() {
+	printf("Hello World main added!\n");
+
+	return 0;
+}
