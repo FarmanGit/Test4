@@ -2,25 +2,23 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-### Toolchain: yocto--arm-poky-linux-gnueabi--opt-poky-2.0.3 ###
-CC=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc --sysroot=/opt/poky/2.0.3/sysroots/cortexa8hf-vfp-neon-poky-linux-gnueabi -mfloat-abi=hard 
-STRIP=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-strip
-CPP=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-cpp --sysroot=/opt/poky/2.0.3/sysroots/cortexa8hf-vfp-neon-poky-linux-gnueabi -mfloat-abi=hard 
-CXX=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ --sysroot=/opt/poky/2.0.3/sysroots/cortexa8hf-vfp-neon-poky-linux-gnueabi -mfloat-abi=hard 
-RANLIB=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ranlib
-CXXFILT=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-c++filt
-DEBUGGER=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gdb
-AR=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ar
-AS=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-as
-OBJCOPY=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-objcopy
-OBJDUMP=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-objdump
-LD=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-ld --sysroot=/opt/poky/2.0.3/sysroots/cortexa8hf-vfp-neon-poky-linux-gnueabi -mfloat-abi=hard 
-ADDR2LINE=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-addr2line
-NM=/opt/poky/2.0.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-nm
+### Toolchain: nitrogen6x-armv7l-timesys-linux-gnueabihf-gcc-5.5.0-20180316-12:47 ###
+CC=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gcc
+STRIP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-strip
+CXX=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-g++
+CPP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-cpp
+RANLIB=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ranlib
+DEBUGGER=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-gdb
+AR=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ar
+AS=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-as
+OBJCOPY=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objcopy
+OBJDUMP=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-objdump
+LD=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-ld
+NM=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-nm
 
 ################################################################################# 
 # TimeStorm Flags  
 ################################################################################
  
- TIMESTORM_COMPILER_FLAGS = -march=armv7-a -mfloat-abi=hard -mfpu=neon -mtune=cortex-a8  -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF 
- TIMESTORM_LINKER_FLAGS = -o "Test4" 
+ TIMESTORM_COMPILER_FLAGS = -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF 
+ TIMESTORM_LINKER_FLAGS = -o "USER_OBJS" 

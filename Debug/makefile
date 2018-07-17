@@ -21,21 +21,30 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
+EXECUTABLES += \
+USER_OBJS \
+
 
 # All Target
-all: Test4
+all: libTest4CStatic.a
 
 # Tool invocations
-Test4: $(OBJS) $(USER_OBJS)
+libTest4CStatic.a: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
+	@echo 'Invoking: GCC Archiver'
+	ar -r  "libTest4CStatic.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+USER_OBJS: $(OBJS) $(USER_OBJS)
 	@echo 'Invoking: GCC C Linker'
 	$(CC) $(TIMESTORM_LINKER_FLAGS) $(OBJS) $(USER_OBJS) $(LIBS)
-	@echo 'Finished building target: $@'
+	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Test4
+	-$(RM) $(EXECUTABLES)$(OBJS)$(ARCHIVES)$(C_DEPS) libTest4CStatic.a
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -9,7 +9,6 @@ int sayHello() {
 
 
 int main() {
-	printf("Hello World main added!\n");
-
+	printf("Hello World main added and modified!\n");
 	return 0;
 }
